@@ -7,5 +7,6 @@
 {% block content %}
     {% for book in books %}
         <h1>{{ book.title }}</h1>
+        <a href= "{% url 'url-book'  book_pk=book.pk %}" >En savoir plus</a>
     {% endfor %}
 {% endblock %}
